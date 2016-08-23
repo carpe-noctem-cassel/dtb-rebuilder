@@ -885,6 +885,7 @@
 			ale_entries = <1024>;
 			bd_ram_size = <0x2000>;
 			no_bd_ram = <0>;
+			rx_descs = <64>;
 			mac_control = <0x20>;
 			slaves = <2>;
 			active_slave = <0>;
@@ -907,7 +908,7 @@
 			status = "disabled";
 
 			davinci_mdio: mdio@4a101000 {
-				compatible = "ti,cpsw-mdio";
+				compatible = "ti,davinci-mdio";
 				#address-cells = <1>;
 				#size-cells = <0>;
 				ti,hwmods = "davinci_mdio";

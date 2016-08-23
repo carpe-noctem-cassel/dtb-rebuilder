@@ -318,6 +318,11 @@
 	phy-mode = "mii";
 };
 
+
+&cpsw_emac1 {
+	status = "disabled";
+};
+
 &mac {
 	pinctrl-names = "default", "sleep";
 	pinctrl-0 = <&cpsw_default>;
